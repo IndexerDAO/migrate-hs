@@ -36,7 +36,8 @@ e.g. contracts-dev/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj
 ### Pin Logo
 ```bash
 cd contracts-dev/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj
-curl -s -F "file=@./quickswap_polygon.png" "http://localhost:5001/api/v0/add" | jq -r '.Hash' #Save the Output from this
+curl -s -F "file=@./quickswap_polygon.png" "http://localhost:5001/api/v0/add" | jq -r '.Hash'
+#Save the Output for next command
 ```
 ### Pin Logo to IPFS Hash
 ```bash
