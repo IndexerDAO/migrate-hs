@@ -54,7 +54,8 @@ Update metadata.json pointing to the newly pinned logo.
 ### Build
 
 ```bash
-cd ~/contracts-dev && yarn && yarn build
+cd ~/contracts-dev && yarn
+yarn build
 ```
 
 ### Edit .env
