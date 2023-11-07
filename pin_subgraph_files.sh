@@ -117,8 +117,8 @@ fi
 # Pin metadata files to IPFS node
 
 echo "Pin metadata files to IPFS node..."
-subgraph_metadata=$(ipfs_add "$THIS_DIR/subgraphs/$DEPLOYMENT_ID/metadata.json")
-version_metadata=$(ipfs_add "$THIS_DIR/subgraphs/generic-first-version-metadata.json")
+subgraph_metadata=$(ipfs_add "./contracts-dev/cli/subgraphs/$DEPLOYMENT_ID/metadata.json")
+version_metadata=$(ipfs_add "./contracts-dev/cli/subgraphs/$DEPLOYMENT_ID/version-metadata.json")
 
 echo "subgraph metadata pinned: $subgraph_metadata"
 echo "version metadata pinned: $version_metadata"
