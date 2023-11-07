@@ -1,0 +1,11 @@
+{
+    "name": "QuickSwap V3 Farming Polygon (MIPs)",
+    "displayName": "QuickSwap V3 Farming Polygon (MIPs)",
+    "description": "Algebra is a Innovative DEX with concentrated liquidity, adaptive fee, build-in farming etc. This subgraph was published to the network by The Graph Foundation, as part of the MIPs program. You can read more about MIPs here: https://thegraph.com/migration-incentive-program/. Subgraph ownership will be transferred to a new subgraph owner past the initial mainnet MIPs testing phase.",
+    "image": "https://ipfs.network.thegraph.com/api/v0/cat?arg=QmQ8tiVsQDKTUvJAD3nDJJBxxDfwFo7RMKi8BgzAoRqGTh",
+    "website": "https://quickswap.exchange/",
+    "codeRepository": "https://github.com/balancer-labs/balancer-subgraph-v2",
+    "categories": [
+        "Defi"
+    ]
+}
