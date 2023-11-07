@@ -24,6 +24,16 @@ EOF
 ```bash
 sudo systemctl start ipfs.service && sudo systemctl enable ipfs.service
 ```
+### Create Subgraph Directory in ~/migrate-hs/contracts-dev/cli/subgraphs/Qmxxxxxxxxxx
+```bash
+sudo mkdir contracts-dev/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj # HS Deployment ID
+```
+### Add metadata.json, version-metdata.json and png. 
+
+```bash
+e.g. contracts/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj
+```
+
 
 ### Build
 
