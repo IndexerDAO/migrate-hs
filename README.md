@@ -31,14 +31,26 @@ sudo mkdir contracts-dev/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9X
 ### Add metadata.json, version-metdata.json and png. 
 
 ```bash
-e.g. contracts/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj
+e.g. contracts-dev/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj
 ```
-
+### Pin Logo
+```bash
+cd contracts-dev/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj
+curl -s -F "file=@./uniswap.png" "http://localhost:5001/api/v0/add" | jq -r '.Hash'
+```
+### Pin Logo to IPFS Hash
+```bash
+curl -X --POST https://ipfs.network.thegraph.com/api/v0/pin/add?arg=/ipfs/QmHASHYOUSAVEDFROMABOVE
+```
+### Pin files to IPFS
+```bash
+./pin_subgraph_files.sh QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj hs-network migrated-network
+```
 
 ### Build
 
 ```bash
-cd ~/migrate-hs/contracts-dev && yarn && yarn build
+cd ~/contracts-dev && yarn && yarn build
 ```
 
 ### Edit .env
