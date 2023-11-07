@@ -42,9 +42,8 @@ curl -s -F "file=@./quickswap_polygon.png" "http://localhost:5001/api/v0/add" | 
 ### Pin Logo to IPFS Hash
 ```bash
 curl -X --POST https://ipfs.network.thegraph.com/api/v0/pin/add?arg=/ipfs/Qmhash-output-from-above-command
-
-Update metadata.json pointing to the newly pinned logo.
 ```
+Update metadata.json pointing to the newly pinned logo.
 ### Pin files to IPFS
 ```bash
 ./pin_subgraph_files.sh QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj hs-network migrated-network
