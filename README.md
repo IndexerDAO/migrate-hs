@@ -4,6 +4,8 @@
 
 https://docs.ipfs.tech/install/command-line/#install-official-binary-distributions
 
+ipfs init
+
 ### Run IPFS daemon service
 ```bash
 cat <<EOF | sudo tee /etc/systemd/system/ipfs.service
