@@ -5,9 +5,7 @@ if [ -f .env ]; then
     export $(cat .env | xargs)
 fi
 
-
-
-  ./cli/cli.ts  contracts gns publishNewSubgraph \
+./contracts-dev/cli/cli.ts  contracts gns publishNewSubgraph \
   --mnemonic "$MNEMONIC" \
   --provider-url "$RPC_ENDPOINT" \
   --ipfs "https://ipfs.network.thegraph.com/" \
