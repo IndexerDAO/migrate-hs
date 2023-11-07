@@ -36,11 +36,11 @@ e.g. contracts-dev/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj
 ### Pin Logo
 ```bash
 cd contracts-dev/cli/subgraphs/QmPfXMydP7R1XzCbDPgpJ7fh5h22HsNAxVb1RgA9XvwJaj
-curl -s -F "file=@./uniswap.png" "http://localhost:5001/api/v0/add" | jq -r '.Hash'
+curl -s -F "file=@./quickswap_polygon.png" "http://localhost:5001/api/v0/add" | jq -r '.Hash' #Save the Output from this
 ```
 ### Pin Logo to IPFS Hash
 ```bash
-curl -X --POST https://ipfs.network.thegraph.com/api/v0/pin/add?arg=/ipfs/QmHASHYOUSAVEDFROMABOVE
+curl -X --POST https://ipfs.network.thegraph.com/api/v0/pin/add?arg=/ipfs/Qmhash-output-from-above-command
 ```
 ### Pin files to IPFS
 ```bash
