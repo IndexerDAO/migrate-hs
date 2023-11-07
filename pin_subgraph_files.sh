@@ -11,7 +11,7 @@ NEW_CHAIN_NAME="$3"
 
 THIS_DIR=$(dirname $(realpath "$0"))
 HOME_DIR=$(dirname "$THIS_DIR")
-CONTRACTS_SOURCE="$HOME_DIR/contracts"
+CONTRACTS_SOURCE="$HOME_DIR/migrate-hs/contracts-dev"
 export GNS_CONTRACT_ADDRESS=$(jq '."1337".GNS.address' "$CONTRACTS_SOURCE/addresses.json")
 export NETWORK_IPFS_URL=https://ipfs.network.thegraph.com
 export LOCAL_IPFS_URL=http://localhost:5001
